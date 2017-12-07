@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vuejs eğitimi</title> <!-- sayfa başlığı -->
+        <link href="styles.css" rel="stylesheet" /> <!--css dosyasının yolunu belirledik.-->
+        <script src="https://unpkg.com/vue"></script> <!--vue js kütüphanesi ekledik.-->
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>keyboard events</h1>
+            <label>Isim:</label>
+            <input type="text" v-on:keyup.enter="isimGir"/>
+            <label>Yaş</label>
+            <input type="text" v-on:keyup.alt.enter="yasGir"/>
+
+        </div>
+    </body>
+
+    <script src="app.js"></script> <!-- js dosyalırını ekledik. -->
+</html>
