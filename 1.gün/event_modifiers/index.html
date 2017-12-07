@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vuejs eğitimi</title> <!-- sayfa başlığı -->
+        <link href="styles.css" rel="stylesheet" /> <!--css dosyasının yolunu belirledik.-->
+        <script src="https://unpkg.com/vue"></script> <!--vue js kütüphanesi ekledik.-->
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>event modifiers</h1>
+            <!-- <button v-on:click="age++">Arttır</button> ,  butona basınca arttırma yarar -->
+            <!-- <button v-on:click="age- -">Azallt</button> ,  butona basınca azaltma yarar  -->
+            <button v-on:click.once="ekle(1)">Arttır</button> <!-- once sadece 1 kez  kullanmazı sağlar. -->
+            <button v-on:click="cikar(1)">Azallt</button> <!--methodla çağırdık  -->
+            <button v-on:dblclick="ekle(10)">10 Arttır</button> <!-- methodla çağırdık -->
+            <button v-on:dblclick="cikar(10)">10 Azallt</button> <!--methodla çağırdık  -->
+            <p>benim yaşım {{ age }}</p>
+            <div id="canvas" v-on:mousemove="updateXY">{{ x }},{{ y }}</div> <!--v-on:mousemove mouse hareklerini anlayan metot  -->
+            <a v-on:click.prevent="click"href="https://nafidurmus.com">nafi durmus</a>
+            <!--prevent sayesinde aynı sayfada kaldık , yazmasaydık linkteki adrese gidecektik.  -->
+            <!--stop , prevent , capture , self , once gibi methotlarda var.  -->
+
+        </div>
+    </body>
+
+    <script src="app.js"></script> <!-- js dosyalırını ekledik. -->
+</html>
