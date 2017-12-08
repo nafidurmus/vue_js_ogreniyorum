@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vuejs eğitimi</title> <!-- sayfa başlığı -->
+        <link href="styles.css" rel="stylesheet" /> <!--css dosyasının yolunu belirledik.-->
+        <script src="https://unpkg.com/vue"></script> <!--vue js kütüphanesi ekledik.-->
+    </head>
+    <body>
+        <div id="vue-app">
+          <h1>Dynamic css</h1>
+          <h1>Örnek 1 </h1>
+          <!--<div v-on:click="available = !available"v-bind:class="{available: available}">
+            <span>Ayuuu</span>
+          </div>-->         
+          <h2>Örnek 2 </h2>
+          <button v-on:click="nearly = !nearly">Toogle nearly</button>
+          <button v-on:click="available = !available">Toogle available</button>
+          <div v-bind:class="compClasses">
+            <span>Ayuuu</span>
+          </div>
+
+        </div>
+    </body>
+
+    <script src="app.js"></script> <!-- js dosyalırını ekledik. -->
+</html>
