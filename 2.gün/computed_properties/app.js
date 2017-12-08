@@ -19,7 +19,7 @@ new Vue({
     	
     	
     },
-    computed:{
+    computed:{ //consolda bir değeri artarda ne kadar arttırdık onunu saymak için.
         aArttır: function() {
             console.log('aArttır');
             return this.a + this.yas;
