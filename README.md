@@ -1,1 +1,1 @@
-#Burada vue js öğrenirken yazdığım kodları paylaşacağım.
+#* Burada vue js öğrenirken yazdığım kodları paylaşacağım.
